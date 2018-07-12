@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style_other.css">
+    <link rel="icon" href="favicon2.ico">
+    <title>more cats!</title>
+  </head>
+  <body>
+    <div class="topnav" align="right">
+      <a href="">That Do Something Now</a>
+      <a href="https://www.youtube.com/watch?v=5dsGWM5XGdg" target="_blank">Mystery Buttons</a>
+      <a class="active" href="">Fun Things</a>
+      <a href="file:///C:/Users/Girls%20Who%20Code/Desktop/web%20developement/website_home.html">Home</a>
+    </div>
+    <h1>Cat Puns</h1>
+    <div class="images">
+      <img src="catpun1.jpg">
+      <img src="catpun2.jpg">
+    </div>
+    <div class="images">
+      <img src="catpun3.jpg">
+      <img src="catpun4.jpg">
+    </div>
+    <div class="images">
+      <img src="catpun5.jpg">
+      <img src="catpun6.jpg">
+    </div>
+    <div class="images">
+      <img src="catpun7.jpg">
+      <img src="catpun8.jpg">
+    </div>
+    <button onclick=hideShow()>Click For More Cat Puns</button>
+    <div id="hideShow" window.onload=hide()>
+      <p> Why was the cat sitting on a computer? To keep an eye on the mouse.</p>
+      <p> What's worse than raining cats and dogs? Hailing taxis.</p>
+      <p> What's the worse kind of cat? A cat-astrophe.</p>
+      <p> What do you call a pile of cats? A meowntain.</p>
+      <p> What is a cat's favorite color? Purrrrrple.</p>
+    </div>
+    <script>
+    window.onload = hide();
+    function hide() {
+      document.getElementById("hideShow").style.display = 'none';
+    };
+    function hideShow() {
+        var x = document.getElementById("hideShow");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+            x.scrollIntoView()
+        } else {
+            x.style.display = "none";
+        }
+    }
+    </script>
+  </body>
+
+</html>
